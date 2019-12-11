@@ -20,7 +20,7 @@ cmake --build . --target install || exit /b
 cd .. && cd .. || exit /b
 
 rem Build Corrade
-git clone --depth 1 git://github.com/mosra/corrade.git || exit /b
+git clone --depth 1 --branch next git://github.com/mosra/corrade.git || exit /b
 cd corrade || exit /b
 mkdir build && cd build || exit /b
 cmake .. ^
